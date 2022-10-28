@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'lora', 'sans-serif';
+}
+
+.box-area {
+background-image: url(/src/images/hd-wallpaper-6524635_1920.jpg);
+/* height: 100vh;
+width: 100vw; */
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+
+}
+
+.nav-wrapper {
+    height: 70px;
+    /* background: #262626; */
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #262626; opacity: 0.9;
+    
+}
+
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 400px;
+
+}
+
+/* .button {
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400px;
+    padding-top: 7px;
+    margin-top: 20px;
+} */
+
+.button:hover {
+    background-color: #ef744b;
+}
+
+.button:active {
+    background-color: #a9a9a9;
+    color: #808080;
+}
+
+.content {
+    height: 100vh; 
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.social {
+    margin: 20px;
+}
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+
+    }
+}
+
